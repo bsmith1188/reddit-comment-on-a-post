@@ -16,7 +16,7 @@
 			<li>Name : Jimmy Smtih</li>
 			<li>Age: 16</li>
 			<li>Occupation: Works at Dion's. (Typical of a product sponge worthless teenager.)</li>
-			<li>Technology: Owns a Samsung Galaxy s5 (OS is updated to 5.0 Lollipop and has Verison as a mobile carrier)</li>
+			<li>Technology: Owns a Samsung Galaxy s5 (OS is updated to 5.0 Lollipop and has Verizon as a mobile carrier)</li>
 			<li>Needs: As a teenager currently in High School and working at a glorified baked dough, cheese, and tomato shop his main needs are to escape his reality and substitute his own and to take out his pent up rage and hormone imbalances and take them out on random strangers on the internet who are only looking for a little bit of entertainment to distract themselves from their dead end jobs as well. TL;DR: he needs a source of entertainment where he can watch videos of cats playing and insult strangers simultaneously.</li>
 			<li>Goals: His goals are to ruin the lives of everyone around him and even miles away with mean comments while watching a .gif of a kitten playing with a sock.</li>
 		</ul>
