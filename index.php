@@ -22,24 +22,26 @@
 		</ul>
 		<img src="images/douche.jpg" alt="Picture of a teenager">
 		<h3>Use Case</h3>
-		<p id="Use-Case">Jimmy needs to get on Reddit and post a comment on a post that someone has made. So typically he would be inside of the Reddit app on his phone watching the video of someone playing with their new kitten with one of their socks. In order to leave a comment he would need to have a username and password which would typically already be verified. Depending on where he is in the post if he is currently looking at the .gif he needs to go back one step to the core post. From there the post should normally be highlighted so he can already see the list of options for said post so all he needs to do is hit "comments." From here he will see a list of all of the comments previously made by other users and at the top there is a button that looks like a generic "text bubble." If he clicks on that the app will then send him to a new section where he can begin typing his tirade of spelling errors and hate mail to a person he doesn't even know thousands of miles away. After he is finished dumping his excess of testosterone and "douchestrogen" all he has to do is push a little button that looks like a paper airplane. (A thumbnail of the Hindenburg going down might be more apt in this scenario.) After he hits that the comment is sent, the owner is informed that they have a new comment "oh joy!" and the page will refresh showing him his masterpiece right on top of all the other well thought out and non hate crime filled comments.
+		<p id="Use-Case">Jimmy needs to get on Reddit and post a comment on a post that someone has made. So typically he would be inside of the Reddit app on his phone watching the video of someone playing with their new kitten with one of their socks. In order to leave a comment he would need to have a username and password which would typically already be verified. Depending on where he is in the post if he is currently looking at the .gif he needs to go back one step to the core post. From there the post should normally be highlighted so he can already see the list of options for said post so all he needs to do is hit "comments." From here he will see a list of all of the comments previously made by other users and at the top there is a button that looks like a generic "text bubble." If he clicks on that the app will then send him to a new section where he can begin typing his tirade of spelling errors, CAPS LOCK ABUSE, and hate mail to a person he doesn't even know thousands of miles away. After he is finished dumping his excess of testosterone and "douchestrogen" all he has to do is push a little button that looks like a paper airplane. (A thumbnail of the Hindenburg going down might be more apt in this scenario.) After he hits that the comment is sent, the owner is informed that they have a new comment "oh joy!" and the page will refresh showing him his masterpiece right on top of all the other well thought out and non hate crime filled comments.
 		</p>
 		<h3>Interaction Flow</h3>
-			<ul id="Interaction-Flow">
+			<ol id="Interaction-Flow">
 			<!--This is assuming that he was already in the app, logged in, and viewing the content.-->
-				<li>1)Jimmy has to hit the back button to go back from the .gif and to the thumbnail of the post and a list of options underneath it including "comments"</li>
-				<li>2)Jimmy hits the comments button and the app loads in the comments that have already been made. </li>
-				<li>3)Jimmy hits the icon that looks like a speech bubble prompting the app to open up a new comment for him to write.</li>
-				<li>4)Jimmy writes his comment and presses the send key, the app takes the text and turns it into a comment and notifies the owner of the post that someone has posted a new comment.</li>
-				<li>5)Jimmy walks away satisfied because hes a douche.</li>
-		</ul>
+				<li>Jimmy has to hit the back button to go back from the .gif which prompts the app to reload the main page and leave the last link he has clicked on.</li>
+				<li>Jimmy clicks the post base (not the link or the thumbnail as that will send him back into the image) and it prompts the app to drop down a list of options that are horizontally listed including "comments." </li>
+				<li>Jimmy clicks on comments and the app reloads a new page with the post on top with a thumbnail and a list of parent and child comments that are all time stamped with the oldest typically on top.</li>
+				<li>Jimmy clicks on the button that looks like a generic text bubble which prompts the app to load a typing page where he can write his own custom comment which is directly linked to the post.</li>
+				<li>Jimmy types his comment into the text screen and then clicks the post button which prompts the app to add the comment to the post, which will send a notification to the post owner with a link to the comment and will refesh the comments page putting his comment directly on top for only him. (I'm assuming for editing/review purposes. If the page is refreshed again the comment will be relocated to its place among the other comments.) </li>
+				<li>Jimmy walks away satisfied because he's a douche.
+				</li>
+		</ol>
 		<!--This might be more or less incorrect but I will give it my best shot.-->
 		<h3>Conceptual Model</h3>
-		<ul id="Conceptual-Model">
-			<li>1)Profile: Contains </li>
-			<li>2)Posts: Posts are links to images or videos hosted by another site in this case typically imgur and include the posters username and a timestamp of when it was posted.</li>
-			<li>3)Comments: Comments to posts are a 1:N relationship. Comments to comments are a 1:N relationship. Profile to comment is a 1:N relationship. Every comment also has a timestamp and is linked up to the parent comment. If no parent comment is found set to null. </li>
-		</ul>
+		<ol id="Conceptual-Model">
+			<li>Profile: Contains profile name, dob of the profile owner, email address(optional), and First and Last name. </li>
+			<li>Posts: Contains post name, posters profile name, top comment parents, an internal link to the source image/gif, and a timestamp. </li>
+			<li>Comments: Comments to posts are a 1:N relationship. Comments to comments are a 1:N relationship. Profile to comment is a 1:N relationship. Every comment also has a timestamp and is linked up to the parent comment. If no parent comment is found set to null. </li>
+		</ol>
 	</body>
 
 	<!-- Ben Smith 1-11-17 -->
