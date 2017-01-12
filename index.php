@@ -74,7 +74,7 @@
 			<li>DownvotePostId</li>
 		</ol>
 		<ul>
-			<li>Relations</li>
+			<li><strong>Relations</strong></li>
 		</ul>
 		<ol>
 			<li>One <strong>Profile</strong> can make many <strong>Posts</strong> - (1:n)</li>
