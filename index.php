@@ -25,7 +25,7 @@
 		<p id="Use-Case">Jimmy needs to get on Reddit and post a comment on a post that someone has made. So typically he would be inside of the Reddit app on his phone watching the video of someone playing with their new kitten with one of their socks. In order to leave a comment he would need to have a username and password which would typically already be verified. Depending on where he is in the post if he is currently looking at the .gif he needs to go back one step to the core post. From there the post should normally be highlighted so he can already see the list of options for said post so all he needs to do is hit "comments." From here he will see a list of all of the comments previously made by other users and at the top there is a button that looks like a generic "text bubble." If he clicks on that the app will then send him to a new section where he can begin typing his tirade of spelling errors, CAPS LOCK ABUSE, and hate mail to a person he doesn't even know thousands of miles away. After he is finished dumping his excess of testosterone and "douchestrogen" all he has to do is push a little button that looks like a paper airplane. (A thumbnail of the Hindenburg going down might be more apt in this scenario.) After he hits that the comment is sent, the owner is informed that they have a new comment "oh joy!" and the page will refresh showing him his masterpiece right on top of all the other well thought out and non hate crime filled comments.
 		</p>
 		<h3>Interaction Flow</h3>
-			<ol id="Interaction-Flow">
+			<ol class="Interaction-Flow">
 			<!--This is assuming that he was already in the app, logged in, and viewing the content.-->
 				<li>Jimmy has to hit the back button to go back from the .gif which prompts the app to reload the main page and leave the last link he has clicked on.</li>
 				<li>Jimmy clicks the post base (not the link or the thumbnail as that will send him back into the image) and it prompts the app to drop down a list of options that are horizontally listed including "comments." </li>
@@ -37,11 +37,14 @@
 		</ol>
 		<!--This might be more or less incorrect but I will give it my best shot.-->
 		<h3>Conceptual Model</h3>
-		<ol id="Conceptual-Model">
-			<li>Profile: Contains profile name, dob of the profile owner, email address(optional), and First and Last name. </li>
-			<li>Posts: Contains post name, posters profile name, top comment parents, an internal link to the source image/gif, and a timestamp. </li>
-			<li>Comments: Comments to posts are a 1:N relationship. Comments to comments are a 1:N relationship. Profile to comment is a 1:N relationship. Every comment also has a timestamp and is linked up to the parent comment. If no parent comment is found set to null. </li>
-		</ol>
+		<ul class="Conceptual-Model">
+			<li><b>Profile</b></li>
+			<li>ProfileId</li>
+			<li>ProfileDateCreated</li>
+			<li>ProfileEmail</li>
+			<li>ProfileUserDOB</li>
+			<li></li>
+		</ul>
 	</body>
 
 	<!-- Ben Smith 1-11-17 -->
