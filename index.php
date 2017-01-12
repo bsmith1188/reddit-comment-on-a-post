@@ -20,7 +20,7 @@
 			<li>Needs: As a teenager currently in High School and working at a glorified baked dough, cheese, and tomato shop his main needs are to escape his reality and substitute his own and to take out his pent up rage and hormone imbalances and take them out on random strangers on the internet who are only looking for a little bit of entertainment to distract themselves from their dead end jobs as well. TL;DR: he needs a source of entertainment where he can watch videos of cats playing and insult strangers simultaneously.</li>
 			<li>Goals: His goals are to ruin the lives of everyone around him and even miles away with mean comments while watching a .gif of a kitten playing with a sock.</li>
 		</ul>
-		<img src="images/douche.jpg">
+		<img src="images/douche.jpg" alt="Picture of a teenager">
 		<h3>Use Case</h3>
 		<p id="Use-Case">Jimmy needs to get on Reddit and post a comment on a post that someone has made. So typically he would be inside of the Reddit app on his phone watching the video of someone playing with their new kitten with one of their socks. In order to leave a comment he would need to have a username and password which would typically already be verified. Depending on where he is in the post if he is currently looking at the .gif he needs to go back one step to the core post. From there the post should normally be highlighted so he can already see the list of options for said post so all he needs to do is hit "comments." From here he will see a list of all of the comments previously made by other users and at the top there is a button that looks like a generic "text bubble." If he clicks on that the app will then send him to a new section where he can begin typing his tirade of spelling errors and hate mail to a person he doesn't even know thousands of miles away. After he is finished dumping his excess of testosterone and "douchestrogen" all he has to do is push a little button that looks like a paper airplane. (A thumbnail of the Hindenburg going down might be more apt in this scenario.) After he hits that the comment is sent, the owner is informed that they have a new comment "oh joy!" and the page will refresh showing him his masterpiece right on top of all the other well thought out and non hate crime filled comments.
 		</p>
@@ -36,11 +36,9 @@
 		<!--This might be more or less incorrect but I will give it my best shot.-->
 		<h3>Conceptual Model</h3>
 		<ul id="Conceptual-Model">
-			<li>1)Profile names: list of names for human to human interaction and identification.</li>
+			<li>1)Profile: Contains </li>
 			<li>2)Posts: Posts are links to images or videos hosted by another site in this case typically imgur and include the posters username and a timestamp of when it was posted.</li>
-			<li>Post-Title: Posts also must contain a title for identification purposes and human interaction.</li>
-			<li>3)Comments: Comments are cascaded down from posts and notifications are sent to the owner of the comment above, if there is no comment above it is added on top and the notification is sent to the owner of the post. Addendum: multiple comments can be added to the same comment or post. </li>
-			<li>4) Upvotes/Downvotes: Any post or comment can be upvoted or downvoted once per user. </li>
+			<li>3)Comments: Comments to posts are a 1:N relationship. Comments to comments are a 1:N relationship. Profile to comment is a 1:N relationship. Every comment also has a timestamp and is linked up to the parent comment. If no parent comment is found set to null. </li>
 		</ul>
 	</body>
 
