@@ -42,4 +42,6 @@
 			<li>4) Upvotes/Downvotes: Any post or comment can be upvoted or downvoted once per user. </li>
 		</ul>
 	</body>
+
+	<!-- Ben Smith 1-11-17 -->
 </html>
