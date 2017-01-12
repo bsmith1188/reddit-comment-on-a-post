@@ -20,8 +20,15 @@
 		</p>
 			<ul id="Interaction-Flow">
 			<!--This is assuming that he was already in the app, logged in, and viewing the content.-->
-			<li>1)Jimmy has to hit the back button to go back from the .gif and to the thumbnail of the post and a list of options underneath it including "comments"</li>
-			<li>2)Jimmy hits the comments button and the app loads in the comments that have already been made </li>
+				<li>1)Jimmy has to hit the back button to go back from the .gif and to the thumbnail of the post and a list of options underneath it including "comments"</li>
+				<li>2)Jimmy hits the comments button and the app loads in the comments that have already been made. </li>
+				<li>3)Jimmy hits the icon that looks like a speech bubble prompting the app to open up a new comment for him to write.</li>
+				<li>4)Jimmy writes his comment and presses the send key, the app takes the text and turns it into a comment and notifies the owner of the post that someone has posted a new comment.</li>
+				<li>5)Jimmy walks away satisfied because hes a douche.</li>
+		</ul>
+		<!--This might be more or less incorrect but I will give it my best shot.-->
+		<ul id="Conceptual-Model">
+
 		</ul>
 	</body>
 </html>
