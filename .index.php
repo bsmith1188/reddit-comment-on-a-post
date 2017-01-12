@@ -10,7 +10,8 @@
 			<!--The ID tags are being used here just to differentiate the different lists and whatever else, style could be used later but as of right now I'm just using them as a place holder for myself and well anyone who reads the code. If this is unorthodox and there is a different way of doing this then let me know and I will fix it.-->
 
 	<body>
-		<h1>Persona of Jimmy Smtih</h1>
+		<h1>(Reddit Comment on a Post)</h1>
+		<h3>Persona of Jimmy Smtih</h3>
 		<ul>
 			<li>Name : Jimmy Smtih</li>
 			<li>Age: 16</li>
