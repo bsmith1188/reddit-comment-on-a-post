@@ -65,13 +65,13 @@
 			<li>CommentDateTime</li>
 		</ol>
 		<ul>
-			<li><strong>Upvote/downvote</strong></li>
+			<li><strong>Upvote/downvote (weak entity)</strong></li>
 		</ul>
 		<ol>
-			<li>UpvoteCommentId</li>
-			<li>UpvotePostId</li>
-			<li>DownvoteCommentId</li>
-			<li>DownvotePostId</li>
+			<li>UpvoteCommentId(foreign key)</li>
+			<li>UpvotePostId(foreign key)</li>
+			<li>DownvoteCommentId(foreign key)</li>
+			<li>DownvotePostId(foreign key)</li>
 		</ol>
 		<ul>
 			<li><strong>Relations</strong></li>
