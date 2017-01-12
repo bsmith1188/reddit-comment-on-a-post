@@ -38,13 +38,53 @@
 		<!--This might be more or less incorrect but I will give it my best shot.-->
 		<h3>Conceptual Model</h3>
 		<ul class="Conceptual-Model">
-			<li><b>Profile</b></li>
-			<li>ProfileId</li>
+			<li><strong>Profile</strong></li>
+		</ul>
+		<ol>
+			<li>ProfileId(primary key)</li>
 			<li>ProfileDateCreated</li>
 			<li>ProfileEmail</li>
 			<li>ProfileUserDOB</li>
-			<li></li>
+		</ol>
+		<ul>
+			<li><strong>Post</strong></li>
 		</ul>
+		<ol>
+			<li>PostId(primary key)</li>
+			<li>PostContent/link</li>
+			<li>PostDateTime</li>
+			<li>PostProfileId(foreign key)</li>
+		</ol>
+		<ul>
+			<li><strong>Comment</strong></li>
+		</ul>
+		<ol>
+			<li>CommentProfileId(foreign key)</li>
+			<li>CommentId (probably hidden, db use only)</li>
+			<li>CommentContent</li>
+			<li>CommentDateTime</li>
+		</ol>
+		<ul>
+			<li><strong>Upvote/downvote</strong></li>
+		</ul>
+		<ol>
+			<li>UpvoteCommentId</li>
+			<li>UpvotePostId</li>
+			<li>DownvoteCommentId</li>
+			<li>DownvotePostId</li>
+		</ol>
+		<ul>
+			<li>Relations</li>
+		</ul>
+		<ol>
+			<li>One <strong>Profile</strong> can make many <strong>Posts</strong> - (1:n)</li>
+			<li>One <strong>Post</strong> can have many <strong>Comments</strong> - (1:n)</li>
+			<li>One <strong>Comments</strong> can have many <strong>Comments</strong> - (1:n)</li>
+			<li>Many <strong>Posts</strong> can have many <strong>Upvotes</strong> - (m:n)</li>
+			<li>Many <strong>Comments</strong> can have many <strong>Upvotes</strong> - (m:n)</li>
+			<li>Many <strong>Posts</strong> can have many <strong>Downvotes</strong> - (m:n)</li>
+			<li>Many <strong>Comments</strong> can have many <strong>Downvotes</strong> - (m:n)</li>
+		</ol>
 	</body>
 
 	<!-- Ben Smith 1-11-17 -->
