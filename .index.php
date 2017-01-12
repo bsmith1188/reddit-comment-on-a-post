@@ -28,7 +28,11 @@
 		</ul>
 		<!--This might be more or less incorrect but I will give it my best shot.-->
 		<ul id="Conceptual-Model">
-
+			<li>1)Profile names: list of names for human to human interaction and identification.</li>
+			<li>2)Posts: Posts are links to images or videos hosted by another site in this case typically imgur and include the posters username and a timestamp of when it was posted.</li>
+			<li>Post-Title: Posts also must contain a title for identification purposes and human interaction.</li>
+			<li>3)Comments: Comments are cascaded down from posts and notifications are sent to the owner of the comment above, if there is no comment above it is added on top and the notification is sent to the owner of the post. Addendum: multiple comments can be added to the same comment or post. </li>
+			<li>Upvotes/Downvotes: Any post or comment can be upvoted or downvoted once per user. </li>
 		</ul>
 	</body>
 </html>
