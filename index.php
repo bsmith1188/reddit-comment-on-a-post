@@ -41,37 +41,37 @@
 			<li><strong>Profile</strong></li>
 		</ul>
 		<ol>
-			<li>ProfileId(primary key)</li>
-			<li>ProfileDateCreated</li>
-			<li>ProfileEmail</li>
-			<li>ProfileUserDOB</li>
+			<li>profileId(primary key)</li>
+			<li>profileDateCreated</li>
+			<li>profileEmail</li>
+			<li>profileUserDOB</li>
 		</ol>
 		<ul>
 			<li><strong>Post</strong></li>
 		</ul>
 		<ol>
-			<li>PostId(primary key)</li>
-			<li>PostContent/link</li>
-			<li>PostDateTime</li>
-			<li>PostProfileId(foreign key)</li>
+			<li>postId(primary key)</li>
+			<li>postContent/link</li>
+			<li>postDateTime</li>
+			<li>postProfileId(foreign key)</li>
 		</ol>
 		<ul>
 			<li><strong>Comment</strong></li>
 		</ul>
 		<ol>
-			<li>CommentProfileId(foreign key)</li>
-			<li>CommentId (probably hidden, db use only)</li>
-			<li>CommentContent</li>
-			<li>CommentDateTime</li>
+			<li>commentProfileId(foreign key)</li>
+			<li>commentPostId (foreign key)</li>
+			<li>commentContent</li>
+			<li>commentDateTime</li>
 		</ol>
 		<ul>
 			<li><strong>Upvote/downvote (weak entity)</strong></li>
 		</ul>
 		<ol>
-			<li>UpvoteCommentId(foreign key)</li>
-			<li>UpvotePostId(foreign key)</li>
-			<li>DownvoteCommentId(foreign key)</li>
-			<li>DownvotePostId(foreign key)</li>
+			<li>upvoteCommentId(foreign key)</li>
+			<li>upvotePostId(foreign key)</li>
+			<li>downvoteCommentId(foreign key)</li>
+			<li>downvotePostId(foreign key)</li>
 		</ol>
 		<ul>
 			<li><strong>Relations</strong></li>
