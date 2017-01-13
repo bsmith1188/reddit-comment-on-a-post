@@ -68,10 +68,8 @@
 			<li><strong>Upvote/downvote (weak entity)</strong></li>
 		</ul>
 		<ol>
-			<li>upvoteCommentId(foreign key)</li>
-			<li>upvotePostId(foreign key)</li>
-			<li>downvoteCommentId(foreign key)</li>
-			<li>downvotePostId(foreign key)</li>
+			<li>voteCommentId(foreign key)</li>
+			<li>votePostId(foreign key)</li>
 		</ol>
 		<ul>
 			<li><strong>Relations</strong></li>
@@ -80,10 +78,8 @@
 			<li>One <strong>Profile</strong> can make many <strong>Posts</strong> - (1:n)</li>
 			<li>One <strong>Post</strong> can have many <strong>Comments</strong> - (1:n)</li>
 			<li>One <strong>Comments</strong> can have many <strong>Comments</strong> - (1:n)</li>
-			<li>Many <strong>Posts</strong> can have many <strong>Upvotes</strong> - (m:n)</li>
-			<li>Many <strong>Comments</strong> can have many <strong>Upvotes</strong> - (m:n)</li>
-			<li>Many <strong>Posts</strong> can have many <strong>Downvotes</strong> - (m:n)</li>
-			<li>Many <strong>Comments</strong> can have many <strong>Downvotes</strong> - (m:n)</li>
+			<li>Many <strong>Posts</strong> can have many <strong>votes</strong> - (m:n)</li>
+			<li>Many <strong>Comments</strong> can have many <strong>votes</strong> - (m:n)</li>
 		</ol>
 	</body>
 
