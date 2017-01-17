@@ -50,7 +50,7 @@
 			<li><strong>Post</strong></li>
 		</ul>
 		<ol>
-			<li>postId(primary key)</li>
+			<li>postId(foreign key)</li>
 			<li>postContent/link</li>
 			<li>postDateTime</li>
 			<li>postProfileId(foreign key)</li>
@@ -59,7 +59,7 @@
 			<li><strong>Comment</strong></li>
 		</ul>
 		<ol>
-			<li>commentProfileId(foreign key)</li>
+			<li>commentProfileId (foreign key)</li>
 			<li>commentPostId (foreign key)</li>
 			<li>commentContent</li>
 			<li>commentDateTime</li>
