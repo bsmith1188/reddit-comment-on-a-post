@@ -14,3 +14,13 @@ UNIQUE (profileAtHandle),
 -- this officiates the primary key for the entity
 PRIMARY KEY (profileId)
 );
+
+CREATE TABLE tweet (
+tweetId INT UNSIGNED AUTO_INCREMENT NOT NULL,
+tweetProfileId INT UNSIGNED NOT NULL,
+tweetContent VARCHAR(140) NOT NULL,
+tweetDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
+INDEX (tweetProfileId),
+FOREIGN KEY (tweetProfileId) REFERENCES profile(profileId),
+PRIMARY KEY (tweetId)
+);
