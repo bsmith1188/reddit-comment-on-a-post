@@ -15,7 +15,7 @@ CREATE TABLE post (
 	UNIQUE (postId),
 	UNIQUE (postProfileId),
 	PRIMARY KEY (postId),
-	FOREIGN KEY (postProfileId)
+	FOREIGN KEY (postProfileId) REFERENCES profile(profileId)
 );
 CREATE TABLE comment (
 	commentPostId INT UNSIGNED NOT NULL,
@@ -24,6 +24,9 @@ CREATE TABLE comment (
 	commentDateTime TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
 	UNIQUE (commentPostId),
 	UNIQUE (commentProfileId),
-	FOREIGN KEY (commentPostId),
-	FOREIGN KEY (commentProfileId)
+	FOREIGN KEY (commentPostId) REFERENCES post(postId),
+	FOREIGN KEY (commentProfileId) REFERENCES profile(profileId)
 );
+CREATE TABLE vote (
+
+)
