@@ -22,5 +22,10 @@ class Profile implements \JsonSerializable {
 	/**this is optional for the profile and is only asked for to verify use of the "nsfw" subreddits*/
 	/** @var  */
 
+/**
+ * constructor for this profile
+ *
+ *@param
+ *fuck*/
 
 }
