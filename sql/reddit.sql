@@ -27,6 +27,17 @@ CREATE TABLE comment (
 	FOREIGN KEY (commentPostId) REFERENCES post(postId),
 	FOREIGN KEY (commentProfileId) REFERENCES profile(profileId)
 );
-CREATE TABLE vote (
-
-)
+CREATE TABLE postVote (
+	postVoteVote TINYINT,
+	postVoteProfileId INT UNSIGNED NOT NULL,
+	postVotePostId INT UNSIGNED NOT NULL,
+	FOREIGN KEY (postVoteProfileId) REFERENCES profile (profileId),
+	FOREIGN KEY (postVotePostId) REFERENCES post (postId)
+);
+CREATE TABLE commentVote (
+	commentVoteVote          TINYINT,
+	commentVoteCommentPostId INT UNSIGNED NOT NULL,
+	commentVoteProfileId     INT UNSIGNED NOT NULL,
+	FOREIGN KEY (commentVoteCommentPostId) REFERENCES comment (commentPostId),
+	FOREIGN KEY (commentVoteProfileId) REFERENCES profile (profileId)
+);
