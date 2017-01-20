@@ -103,19 +103,37 @@ class Profile implements \JsonSerializable {
 	 * @throws \TypeError if $newProfileEmail is not a string
 	 * @throws \RangeException if $newProfileEmail is too long
 	 */
-	/**
-	 * @param int $profileEmail
-	 */
-	public function setProfileEmail(string $profileEmail) {
+	public function setProfileEmail(string $newProfileEmail) {
 		//verify the email is clean
 		$newProfileEmail = filter_var($newProfileEmail, FILTER_SANITIZE_EMAIL);
 		if(empty($newProfileEmail) === true) {
 			throw(new \InvalidArgumentException("email is empty or insecure"));
 		}
-
 		// verify the email will fit in the database
-		if(strlen($newProfileEmail) > 127) {
+		if(strlen($newProfileEmail) > 128) {
 			throw(new \RangeException("Email contains too many characters"));
 		}
+		// store the email
+		$this->profileEmail = $newProfileEmail;
+	}
+	/**
+	 * accessor method for date created
+	 *
+	 * @return int value of date created
+	 */
+	public function getProfileDateCreated () {
+		return($this->profileDateCreated);
+	}
+	/**
+	 * mutator method for date created
+	 *
+	 * @param int $newProfileDateCreated new value for the date of profile creation
+	 * @throws \InvalidArgumentException if date is incorrect
+	 *
+	 */
+	public function setProfileDateCreated(int $newProfileDateCreated) {
+		if(self::validateDate($newProfileDateCreated) )
+		throw(new \InvalidArgumentException("Date does not match today, please try again."));
+
 	}
 }
