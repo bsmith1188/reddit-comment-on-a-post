@@ -21,7 +21,7 @@ class Profile implements \JsonSerializable {
 	/** this is the email used to make the profile and cannot be used for more than one profile */
 	/** @var string
 	 **/
-	private $userDob;
+	private $profileUserDob;
 	/**this is optional for the profile and is only asked for to verify use of the "nsfw" subreddits*/
 	/** @var int $userDob */
 
@@ -37,12 +37,12 @@ class Profile implements \JsonSerializable {
 	 * @throws \TypeError if data types violate type hits
 	 * @throws \Exception if some other exception occurs
 	 **/
-	public function __construct(int $newProfileId = null, string $newProfileEmail, int $newProfileDob, $newProfileDateCreated) {
+	public function __construct(int $newProfileId = null, string $newProfileEmail, int $newProfileUserDob, int $newProfileDateCreated) {
 		try {
 			$this->setProfileId($newProfileId);
 			$this->setProfileEmail($newProfileEmail);
 			$this->setProfileDateCreated($newProfileDateCreated);
-			$this->setProfileDob($newProfileDob);
+			$this->setProfileUserDob($newProfileUserDob);
 		} catch(\InvalidArgumentException $invalidArgument) {
 			// rethrow the exception to the caller
 			throw(new \InvalidArgumentException($invalidArgument->getmessage(), 0, $invalidArgument));
@@ -135,5 +135,35 @@ class Profile implements \JsonSerializable {
 		if(self::validateDate($newProfileDateCreated) )
 		throw(new \InvalidArgumentException("Date does not match today, please try again."));
 
+	}
+
+	/** mutator for the user DOB
+	 *
+	 *@param int $newProfileDob new value for the users Date of birth
+	 * @throws \InvalidArgumentException if the date format is invalid
+	*/
+
+	public function setProfileUserDob(int $newProfileUserDob) {
+		if (self::validateDate($newProfileUserDob) )
+			throw(new \InvalidArgumentException("Date is not valid, reformat and try again."));
+	}
+
+	/**
+	 * accessor method for date of birth
+	 *
+	 * @return int value of date of birth
+	 */
+	public function getUserDob(): int {
+		return ($this->profileUserDob);
+	}
+	/**
+	 * formats the stat variables to JSON serialization
+	 * @return array resulting state variables to serialize
+	 */
+	public function jsonSerialize() {
+		$fields = get_object_vars($this);
+		$fields["profileDateCreated"] =$this->profileDateCreated->getTimestamp()*1000;
+		$fields["profileUserDob"] =$this->profileUserDob->getTimestamp()*1000;
+		return($fields);
 	}
 }
